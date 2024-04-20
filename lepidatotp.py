@@ -46,8 +46,8 @@ def main():
 
     img = qrcode.make(otpauth)
     img.save("/tmp/qr.png")
+    print(f"\n{otpauth}\n")
     print("Scritto /tmp/qr.png. Ricordati di rimuoverlo.")
-    webbrowser.open("/tmp/qr.png")
 
 if __name__ == "__main__":
     main()
